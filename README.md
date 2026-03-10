@@ -66,51 +66,52 @@ dotfiles/
 │
 ├── dependencies.txt
 └── README.md
-Component Overview
-hypr
-The core window manager configuration. It is split into logical modules (autostart.conf, bindings.conf, lookandfeel.conf, etc.) to keep the main hyprland.conf clean. Custom bash scripts handle specialized window behaviors like floating toggles and window minimization.
+```
 
-eww
-Powers the custom control center widget. Contains .yuck layout files, .scss styling, and shell scripts to fetch and toggle system states (Wi-Fi, Bluetooth, Audio).
+---
 
-waybar
-The main status bar at the top of the screen. It relies heavily on a custom directory of .svg icons to maintain a minimal, text-light appearance.
+## Component Overview
+* **hypr**: The core window manager configuration. It is split into logical modules (autostart.conf, bindings.conf, lookandfeel.conf, etc.) to keep the main hyprland.conf clean. Custom bash scripts handle specialized window behaviors like floating toggles and window minimization.
+* **eww**: Powers the custom control center widget. Contains .yuck layout files, .scss styling, and shell scripts to fetch and toggle system states (Wi-Fi, Bluetooth, Audio).
+* **waybar**: The main status bar at the top of the screen. It relies heavily on a custom directory of .svg icons to maintain a minimal, text-light appearance.
+* **rofi**: The application launcher. Configured with a config.rasi file to ensure the background blur and dark theme perfectly match the terminal and Eww widgets.
+* **nwg-dock-hyprland**: A simple application dock positioned at the bottom of the screen, styled via CSS to match the border and transparency rules of the overall system.
 
-rofi
-The application launcher. Configured with a config.rasi file to ensure the background blur and dark theme perfectly match the terminal and Eww widgets.
+---
 
-nwg-dock-hyprland
-A simple application dock positioned at the bottom of the screen, styled via CSS to match the border and transparency rules of the overall system.
-
-Installation
-Prerequisites
+## Installation
+### Prerequisites
 Ensure you have your base system running with Hyprland installed. A list of all required packages and fonts can be found in dependencies.txt.
 
-Setup
+### Setup
 Clone the repository:
 
-Bash
+```Bash
 git clone [https://github.com/Ayaanfaisaall/dotfiles.git](https://github.com/Ayaanfaisaall/dotfiles.git)
 cd dotfiles
-Install Dependencies:
+```
+
+### Install Dependencies:
 Review and install the packages listed in dependencies.txt using your package manager (e.g., dnf for Fedora).
 
-Deploy Configurations:
+### Deploy Configurations:
 Backup your existing .config directories, then copy the contents of this repository to your local .config folder:
 
-Bash
-cp -r .config/* ~/.config/
-OR
+```Bash
 cd dotfiles/.config && stow .
-Make Scripts Executable:
+```
+
+### Make Scripts Executable:
 Ensure all bash scripts in the hypr/scripts, eww/scripts, and nwg-dock-hyprland directories have execute permissions:
 
-Bash
+```Bash
 chmod +x ~/.config/hypr/scripts/*.sh
 chmod +x ~/.config/eww/scripts/*.sh
 chmod +x ~/.config/nwg-dock-hyprland/launch.sh
-Reload:
+```
+
+### Reload:
 Restart Hyprland or use your defined keybind to reload the configuration.
 
-License
+## License
 No License.
