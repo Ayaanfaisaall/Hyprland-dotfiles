@@ -87,7 +87,7 @@ Ensure you have your base system running with Hyprland installed. A list of all 
 Clone the repository:
 
 ```Bash
-git clone [https://github.com/Ayaanfaisaall/Hyprland-dotfiles.git](https://github.com/Ayaanfaisaall/dotfiles.git)
+git clone https://github.com/Ayaanfaisaall/Hyprland-dotfiles.git
 cd Hyprland-dotfiles
 ```
 
@@ -108,7 +108,6 @@ Ensure all bash scripts in the hypr/scripts, eww/scripts, and nwg-dock-hyprland 
 ```Bash
 chmod +x ~/.config/hypr/scripts/*.sh
 chmod +x ~/.config/eww/scripts/*.sh
-chmod +x ~/.config/nwg-dock-hyprland/launch.sh
 ```
 
 ### Reload:
