@@ -1,0 +1,210 @@
+/* --- Global Style --- */
+* {
+    /* JetBrains Mono Nerd Font ka istemal */
+    font-family: "JetBrainsMono Nerd Font", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+
+/* --- Main Window (Waybar) --- */
+window#waybar {
+    /* Light Frosted Glass Effect */
+    background: rgba(255, 255, 255, 0.01);
+    border: 0px;
+    border-radius: 15px;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- Modules Grouping --- */
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 2px 8px;
+}
+
+/* --- Individual Module Styling --- */
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#custom-close,
+#custom-minimize,
+#custom-maximize,
+#window {
+    padding: 0 10px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+/* --- Specific Enhancements --- */
+
+/* Clock - Center focus */
+#clock {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/* Window Title */
+#window {
+    color: rgba(255, 255, 255, 0.8);
+    font-style: normal;
+}
+
+/* Left Buttons */
+#custom-close,
+#custom-minimize,
+#custom-maximize {
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+
+/* --- Animations --- */
+@keyframes blink {
+    to {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #f53c3c;
+    }
+}
+
+/* --- SVG Based Modules --- */
+
+#network {
+    background-image: url("/home/ayaan/.config/waybar/icons/wifi.svg");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-right: 9px;
+}
+
+/* Base class SVGs ko sahi se hide/structure karne ke liye zaroori hai */
+#bluetooth {
+    background-image: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+#bluetooth.connected {
+    background-image: url("/home/ayaan/.config/waybar/icons/bluetooth.svg");
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-right: 6px;
+    padding-left: 1px;
+    margin: 0px;
+    min-width: 16px;
+}
+
+#pulseaudio {
+    background-image: url("/home/ayaan/.config/waybar/icons/audio.svg");
+    background-size: 25px;
+    padding-right: 0px;
+    margin-right: 0px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    min-width: 25px;
+}
+
+#pulseaudio.muted {
+    background-image: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+/* Battery Base - SVG icons ki sizing ke liye zaroori hai */
+#battery {
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    padding-left: 0px;
+    margin-left: 0px;
+    min-width: 28px;
+}
+
+#battery.bat-100 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery.svg");
+}
+
+#battery.bat-90 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery90.svg");
+}
+
+#battery.bat-80 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery80.svg");
+}
+
+#battery.bat-70 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery70.svg");
+}
+
+#battery.bat-60 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery60.svg");
+}
+
+#battery.bat-50 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery50.svg");
+}
+
+#battery.bat-40 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery40.svg");
+}
+
+#battery.bat-30 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery30.svg");
+}
+
+#battery.bat-20 {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery20.svg");
+}
+
+#battery.bat-10:not(.charging) {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery10.svg");
+}
+
+#battery.bat-100.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery100c.svg");
+}
+
+#battery.bat-90.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery90c.svg");
+}
+
+#battery.bat-80.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery80c.svg");
+}
+
+#battery.bat-70.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery70c.svg");
+}
+
+#battery.bat-60.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery60c.svg");
+}
+
+#battery.bat-50.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery50c.svg");
+}
+
+#battery.bat-40.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery40c.svg");
+}
+
+#battery.bat-30.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery30c.svg");
+}
+
+#battery.bat-20.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery20c.svg");
+}
+
+#battery.bat-10.charging {
+    background-image: url("/home/ayaan/.config/waybar/icons/battery10c.svg");
+}
