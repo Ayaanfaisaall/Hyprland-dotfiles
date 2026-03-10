@@ -9,6 +9,9 @@ if [ "$action" == "exit" ]; then
 elif [ "$action" == "poweroff" ]; then
     prompt="Poweroff PC?"
     command="systemctl poweroff"
+elif [ "$action" == "reboot" ]; then
+    prompt="Restart PC?"
+    command="reboot"
 else
     echo "Invalid action"
     exit 1
