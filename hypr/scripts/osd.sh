@@ -13,11 +13,19 @@ case $1 in
         ;;
     vol_mute)
         wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-        notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i audio-volume-muted "Speaker Mute Toggled"
+        if wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q '\[MUTED\]'; then
+            notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i audio-volume-muted "Speaker Mute"
+        else
+            notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i audio-volume-muted "Speaker Un-Mute"
+        fi
         ;;
     mic_mute)
         wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
-        notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i microphone-sensitivity-muted "Mic Mute Toggled"
+        if wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -q '\[MUTED\]'; then
+            notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i microphone-sensitivity-muted "Mic Mute"
+        else
+            notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i microphone-sensitivity-muted "Mic Un-Mute"
+        fi
         ;;
     br_up)
         brightnessctl set 10%+

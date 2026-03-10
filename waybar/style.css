@@ -103,7 +103,7 @@ window#waybar {
 }
 
 #pulseaudio {
-    background-image: url("/home/ayaan/.config/waybar/icons/audio.svg");
+    background-image: url("/home/ayaan/waybar/icons/audio.svg");
     background-size: 25px;
     padding-right: 0px;
     margin-right: 0px;

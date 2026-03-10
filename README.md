@@ -87,8 +87,8 @@ Ensure you have your base system running with Hyprland installed. A list of all 
 Clone the repository:
 
 ```Bash
-git clone [https://github.com/Ayaanfaisaall/dotfiles.git](https://github.com/Ayaanfaisaall/dotfiles.git)
-cd dotfiles
+git clone [https://github.com/Ayaanfaisaall/Hyprland-dotfiles.git](https://github.com/Ayaanfaisaall/dotfiles.git)
+cd Hyprland-dotfiles
 ```
 
 ### Install Dependencies:
@@ -98,7 +98,8 @@ Review and install the packages listed in dependencies.txt using your package ma
 Backup your existing .config directories, then copy the contents of this repository to your local .config folder:
 
 ```Bash
-cd dotfiles/.config && stow .
+cd Hyprland-dotfiles/.config
+stow -t ~/.config .
 ```
 
 ### Make Scripts Executable:
