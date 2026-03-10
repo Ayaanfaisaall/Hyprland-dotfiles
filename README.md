@@ -6,19 +6,6 @@ This repository contains the configuration files required to replicate a clean, 
 
 ---
 
-## Screenshots
-
-### App Launcher (Rofi)
-![Rofi Launcher](Screenshot_2026-03-08_22-04-24.jpg)
-
-### Clean Desktop & Dock
-![Clean Desktop](Screenshot_2026-03-08_22-04-30.jpg)
-
-### Custom Control Center (Eww)
-![Eww Control Center](image_6aa223.jpg)
-
----
-
 ## Why This Setup Exists
 
 Finding a balance between a feature-rich desktop and a visually calm workspace can be difficult. This configuration addresses that by:
