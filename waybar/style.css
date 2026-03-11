@@ -64,6 +64,9 @@ window#waybar {
     padding: 0 5px;
 }
 
+#custom-close {
+	padding-left: 15px;
+}
 
 /* --- Animations --- */
 @keyframes blink {

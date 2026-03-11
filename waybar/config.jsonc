@@ -17,6 +17,7 @@
 
 // --- Module Layout ---
 "modules-left": [
+    "image#logo",
     "custom/close",
     "custom/minimize",
     "custom/maximize",
@@ -36,6 +37,12 @@
 
 
 // --- Modules Left (Window Controls) ---
+"image#logo":{
+    "path":"/home/ayaan/dotfiles/.config/waybar/logo/zaail.svg",
+    "size":24,
+    "margin-right":10
+},
+
 "custom/close": {
     "format": "🔴",
     "on-click": "hyprctl dispatch killactive",
