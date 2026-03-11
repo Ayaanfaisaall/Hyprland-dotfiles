@@ -51,6 +51,7 @@ dotfiles/
 │   │   ├── monitor.conf
 │   │   ├── permissions.conf
 │   │   ├── programs.conf
+│   │   ├── wallpapers.conf
 │   │   ├── window.conf
 │   │   └── winrulev2.conf
 │   ├── nwg-dock-hyprland/
