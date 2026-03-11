@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Close Rofi if alredy open
+if pgrep -x "rofi" > /dev/null; then
+    pkill -x rofi
+    exit 0
+fi
+
 # Define the Rofi command (added -show-icons to render the SVGs)
 rofi_cmd="rofi -dmenu -i -show-icons -p"
 
@@ -8,6 +14,9 @@ icon_path="/home/ayaan/.config/eww/assets/wifi2.svg"
 
 # Check if Wi-Fi is currently disabled
 status=$(nmcli -t -f WIFI g)
+
+# Close the control_center as soon as wifi rofi opens
+eww close control_center
 
 if [ "$status" = "disabled" ]; then
     chosen=$(echo -e "Enable Wi-Fi\0icon\x1f$icon_path" | $rofi_cmd "Wi-Fi")
@@ -66,12 +75,12 @@ if [ "$clean_chosen" == "$active_ssid" ]; then
     exit 0
 fi
 
-# Check if the network is already saved
-saved=$(nmcli -t -f NAME connection show | grep -w "$clean_chosen")
+# Check if the network is already saved (-Fx ensures exact line match)
+saved=$(nmcli -t -f NAME connection show | grep -Fx "$clean_chosen")
 
 if [ -n "$saved" ]; then
-    # Connect to known network
-    nmcli connection up id "$clean_chosen"
+    # Connect to known network using device connect
+    nmcli device wifi connect "$clean_chosen"
     notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i network-wireless "Connected to $clean_chosen"
 else
     # Prompt for password for new network using Rofi's hidden input

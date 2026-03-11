@@ -1,11 +1,20 @@
 #!/bin/bash
 
+# Close Rofi if already open
+if pgrep -x "rofi" > /dev/null; then
+    pkill -x rofi
+    exit 0
+fi
+
 # Rofi command mein bas -show-icons add kiya hai
 rofi_cmd="rofi -dmenu -i -show-icons -p"
 icon_path="/home/ayaan/.config/eww/assets/bluetooth2.svg"
 
 # Check if Bluetooth is powered on
 power_status=$(bluetoothctl show | grep "Powered: yes")
+
+# Close the control_center as soon as wifi rofi opens
+eww close control_center
 
 if [ -z "$power_status" ]; then
     chosen=$(echo -e "Power On\0icon\x1f$icon_path" | $rofi_cmd "Bluetooth")
