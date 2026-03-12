@@ -66,7 +66,6 @@ dotfiles/
 │   │   ├── window.conf
 │   │   └── winrulev2.conf
 │   ├── nwg-dock-hyprland/
-│   │   ├── launch.sh
 │   │   └── style.css
 │   ├── plymouth/
 │   │   └── themes/
@@ -76,11 +75,11 @@ dotfiles/
 │   └── waybar/
 │       ├── icons/
 │       ├── logo/
-│       ├── scripts/
 │       ├── config.jsonc
 │       └── style.css
 │
 ├── dependencies.txt
+├── install.sh
 ├── LICENSE
 └── README.md
 ```
@@ -97,38 +96,14 @@ dotfiles/
 ---
 
 ## Installation
-### Prerequisites
-Ensure you have your base system running with Hyprland installed. A list of all required packages and fonts can be found in dependencies.txt.
-
-### Setup
-Clone the repository:
+Use the install.sh script:
 
 ```Bash
 git clone https://github.com/Ayaanfaisaall/Hyprland-dotfiles.git
 cd Hyprland-dotfiles
+chmod +x install.sh
+./install.sh
 ```
-
-### Install Dependencies:
-Review and install the packages listed in dependencies.txt using your package manager (e.g., dnf for Fedora).
-
-### Deploy Configurations:
-Backup your existing .config directories, then copy the contents of this repository to your local .config folder:
-
-```Bash
-cd Hyprland-dotfiles/.config
-stow -t ~/.config .
-```
-
-### Make Scripts Executable:
-Ensure all bash scripts in the hypr/scripts, eww/scripts, and nwg-dock-hyprland directories have execute permissions:
-
-```Bash
-chmod +x ~/.config/hypr/scripts/*.sh
-chmod +x ~/.config/eww/scripts/*.sh
-```
-
-### Reload:
-Restart Hyprland or use your defined keybind to reload the configuration.
 
 ---
 
