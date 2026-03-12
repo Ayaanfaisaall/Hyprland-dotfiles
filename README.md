@@ -81,6 +81,7 @@ dotfiles/
 │       └── style.css
 │
 ├── dependencies.txt
+├── LICENSE
 └── README.md
 ```
 
