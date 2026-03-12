@@ -38,7 +38,7 @@
 
 // --- Modules Left (Window Controls) ---
 "image#logo":{
-    "path":"/home/ayaan/dotfiles/.config/waybar/logo/zaail.svg",
+    "path":"/home/ayaan/.config/waybar/logo/zaail.svg",
     "size":24,
     "margin-right":10
 },
