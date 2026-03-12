@@ -130,4 +130,4 @@ chmod +x ~/.config/eww/scripts/*.sh
 Restart Hyprland or use your defined keybind to reload the configuration.
 
 ## License
-No License.
+MIT License.
