@@ -71,13 +71,13 @@ Hyprland-dotfiles/
 │   │   └── themes/
 │   ├── rofi/
 │   │   └── config.rasi
-│   ├── screenshots/
 │   └── waybar/
 │       ├── icons/
 │       ├── logo/
 │       ├── config.jsonc
 │       └── style.css
 │
+├── screenshots
 ├── dependencies.txt
 ├── install.sh
 ├── LICENSE
