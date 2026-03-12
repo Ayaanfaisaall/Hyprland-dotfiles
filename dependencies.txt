@@ -1,1 +1,1 @@
-hyprland waybar rofi-wayland dunst nwg-dock-hyprland eww pamixer brightnessctl network-manager-applet bluez-tools stow
+hyprland waybar rofi-wayland dunst nwg-dock-hyprland eww pamixer brightnessctl network-manager-applet bluez-tools stow cliphist wl-clipboard libnotify grim slurp alacritty
