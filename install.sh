@@ -2,7 +2,7 @@
 
 # Install Dependencies (for Fedora)
 echo "Installing Dependencies..."
-sudo dnf install -y hyprland waybar rofi-wayland dunst nwg-dock-hyprland eww pamixer brightnessctl network-manager-applet bluez-tools stow cliphist wl-clipboard libnotify grim slurp alacritty
+sudo dnf install -y $(cat dependencies.txt)
 
 # Backup already existing configurations
 echo "Backing up existing configurations (if any)" 

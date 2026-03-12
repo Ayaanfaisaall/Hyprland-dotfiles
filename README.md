@@ -184,5 +184,13 @@ To keep the configuration clean and modular, complex window management and custo
 
 ---
 
+## Credits
+
+- Hyprland developers
+- eww by elkowar
+- waybar community
+
+---
+
 ## License
 MIT License.
