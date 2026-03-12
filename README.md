@@ -68,6 +68,8 @@ dotfiles/
 │   ├── nwg-dock-hyprland/
 │   │   ├── launch.sh
 │   │   └── style.css
+│   ├── plymouth/
+│   │   └── themes/
 │   ├── rofi/
 │   │   └── config.rasi
 │   └── waybar/
