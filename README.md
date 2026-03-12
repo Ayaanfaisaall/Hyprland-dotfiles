@@ -40,7 +40,7 @@ Finding a balance between a feature-rich desktop and a visually calm workspace c
 ## Project Structure
 
 ```text
-dotfiles/
+Hyprland-dotfiles/
 │
 ├── .config/
 │   ├── dunst/
