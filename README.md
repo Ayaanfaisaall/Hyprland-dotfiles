@@ -129,5 +129,84 @@ chmod +x ~/.config/eww/scripts/*.sh
 ### Reload:
 Restart Hyprland or use your defined keybind to reload the configuration.
 
+---
+
+## Keybindings
+
+This configuration uses the **`SUPER`** (Windows/Meta) key as the main modifier (`$mainMod`). 
+
+### System Commands
+| Shortcut | Action |
+| :--- | :--- |
+| `SUPER` + `ALT` + `E` | Exit Hyprland (with confirmation) |
+| `SUPER` + `ALT` + `P` | Poweroff (with confirmation) |
+| `SUPER` + `ALT` + `R` | Reboot (with confirmation) |
+
+### Window Management
+| Shortcut | Action |
+| :--- | :--- |
+| `SUPER` + `Q` | Kill active window |
+| `SUPER` + `F` | Toggle fullscreen |
+| `SUPER` + `ALT` + `F` | Toggle floating mode |
+| `SUPER` + `J` | Toggle split |
+| `SUPER` + `P` | Pseudo tiling |
+| `SUPER` + `O` | Toggle window opacity |
+| `SUPER` + `M` | Minimize window |
+| `SUPER` + `ALT` + `M` | Recover minimized window (works as stack) |
+| `CTRL` + `H/J/K/L` | Move focus (Left / Down / Up / Right) |
+| `SUPER` + `Left Click` | Move window (drag) |
+| `SUPER` + `Right Click` | Resize window (drag) |
+
+### Applications & Utilities
+| Shortcut | Action |
+| :--- | :--- |
+| `SUPER` + `T` | Open Terminal |
+| `SUPER` + `ALT` + `C` | Open Google Chrome |
+| `SUPER` + `R` | Open Rofi (App Launcher) |
+| `Print Screen` | Take a screenshot |
+| `SUPER` + `V` | Open clipboard manager |
+| `SUPER` + `ALT` + `V` | Clear clipboard history |
+
+### UI & Menus
+| Shortcut | Action |
+| :--- | :--- |
+| `SUPER` + `C` | Open Control Center |
+| `SUPER` + `D` | Show Dock |
+| `SUPER` + `B` | Bluetooth menu |
+| `SUPER` + `W` | Wi-Fi menu |
+
+### Audio & Brightness
+*Standard keyboard media/function keys are mapped to custom OSD notifications.*
+
+| Shortcut | Action |
+| :--- | :--- |
+| `Volume Up / Down` | Adjust system volume |
+| `Mute` | Toggle audio mute |
+| `Mic Mute` | Toggle microphone mute |
+| `Brightness Up / Down` | Adjust screen brightness |
+
+---
+
+## Custom Scripts
+
+To keep the configuration clean and modular, complex window management and custom UI menus are handled by dedicated bash scripts.
+
+### Hyprland Scripts (`~/.config/hypr/scripts`)
+| Script | Functionality |
+| :--- | :--- |
+| `confirm.sh` | Launches a Rofi menu to confirm critical system actions (poweroff, reboot, exit) to prevent accidental triggers. |
+| `floating.sh` | Transitions the active window to floating mode, automatically centering it on the screen with a perfectly proportioned size. |
+| `minimize.sh` | Handles the custom logic for minimizing and restoring active windows in the workspace. |
+| `osd.sh` | Powers the custom On-Screen Display (OSD), providing visual popups for hardware controls like volume, mic, and brightness adjustments. |
+| `toggleopaque.sh` | Toggles the active window's opacity. Perfect for quickly switching between a solid background and that clean, frosted glass aesthetic. |
+
+### Connectivity Menus (`~/.config/eww/scripts`)
+| Script | Functionality |
+| :--- | :--- |
+| `bluetooth.sh` | Spawns a custom Rofi interface to scan for, list, and seamlessly connect to available Bluetooth devices. |
+| `wifi.sh` | Opens a custom Rofi menu to display available Wi-Fi networks and manage connections without needing a heavy GUI network manager. |
+
+---
+
 ## License
 MIT License.
