@@ -57,6 +57,7 @@ Hyprland-dotfiles/
 │   │   ├── env.conf
 │   │   ├── hyprland.conf
 │   │   ├── hyprpaper.conf
+│   │   ├── hyprlock.conf
 │   │   ├── input.conf
 │   │   ├── lookandfeel.conf
 │   │   ├── monitor.conf
@@ -117,6 +118,7 @@ This configuration uses the **`SUPER`** (Windows/Meta) key as the main modifier 
 | `SUPER` + `ALT` + `E` | Exit Hyprland (with confirmation) |
 | `SUPER` + `ALT` + `P` | Poweroff (with confirmation) |
 | `SUPER` + `ALT` + `R` | Reboot (with confirmation) |
+| `SUPER` + `ALT` + `L` | Lock (with confirmation) |
 
 ### Window Management
 | Shortcut | Action |
