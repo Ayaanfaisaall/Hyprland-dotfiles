@@ -25,6 +25,7 @@ chmod +x ~/.config/eww/scripts/*.sh
 sed -i "s|/home/ayaan/|$HOME|" $HOME/.config/hypr/hyprpaper.conf
 sed -i "s|/home/ayaan/|$HOME|" $HOME/.config/waybar/config.jsonc
 sed -i "s|/home/ayaan/|$HOME|" $HOME/.config/waybar/style.css
+sed -i "s|/home/ayaan/|$HOME|" $HOME/.config/hypr/hyprlock.conf
 
 # Reload Hyprland (if already loaded) or login into Hyprland
 echo "Installation Successfull! Reload Hyprland (if already loaded) or login into Hyprland"

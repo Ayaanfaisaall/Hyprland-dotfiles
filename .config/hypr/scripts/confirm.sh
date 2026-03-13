@@ -12,6 +12,9 @@ elif [ "$action" == "poweroff" ]; then
 elif [ "$action" == "reboot" ]; then
     prompt="Restart PC?"
     command="reboot"
+elif [ "$action" == "hyprlock" ]; then
+    prompt="Lock Session?"
+    command="hyprlock"
 else
     echo "Invalid action"
     exit 1
