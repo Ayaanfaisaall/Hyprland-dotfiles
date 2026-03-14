@@ -141,7 +141,7 @@ This configuration uses the **`SUPER`** (Windows/Meta) key as the main modifier 
 | Shortcut | Action |
 | :--- | :--- |
 | `SUPER` + `T` | Open Terminal |
-| `SUPER` + `ALT` + `C` | Open Google Chrome |
+| `SUPER` + `C` | Open Google Chrome |
 | `SUPER` + `R` | Open Rofi (App Launcher) |
 | `Print Screen` | Take a screenshot |
 | `SUPER` + `V` | Open clipboard manager |
@@ -150,7 +150,7 @@ This configuration uses the **`SUPER`** (Windows/Meta) key as the main modifier 
 ### UI & Menus
 | Shortcut | Action |
 | :--- | :--- |
-| `SUPER` + `C` | Open Control Center |
+| `SUPER` + `E` | Open Control Center |
 | `SUPER` + `D` | Show Dock |
 | `SUPER` + `B` | Bluetooth menu |
 | `SUPER` + `W` | Wi-Fi menu |
