@@ -78,7 +78,9 @@ Hyprland-dotfiles/
 │       ├── config.jsonc
 │       └── style.css
 │
-├── screenshots
+├── screenshots/
+├── scripts/
+│   └── theme.sh
 ├── dependencies.txt
 ├── install.sh
 ├── LICENSE
@@ -169,7 +171,7 @@ This configuration uses the **`SUPER`** (Windows/Meta) key as the main modifier 
 
 To keep the configuration clean and modular, complex window management and custom UI menus are handled by dedicated bash scripts.
 
-### Hyprland Scripts (`~/.config/hypr/scripts`)
+### Hyprland Scripts (`Hyprland-dotfiles/.config/hypr/scripts`)
 | Script | Functionality |
 | :--- | :--- |
 | `confirm.sh` | Launches a Rofi menu to confirm critical system actions (poweroff, reboot, exit) to prevent accidental triggers. |
@@ -178,11 +180,16 @@ To keep the configuration clean and modular, complex window management and custo
 | `osd.sh` | Powers the custom On-Screen Display (OSD), providing visual popups for hardware controls like volume, mic, and brightness adjustments. |
 | `toggleopaque.sh` | Toggles the active window's opacity. Perfect for quickly switching between a solid background and that clean, frosted glass aesthetic. |
 
-### Connectivity Menus (`~/.config/eww/scripts`)
+### Connectivity Menus (`Hyprland-dotfiles/.config/eww/scripts`)
 | Script | Functionality |
 | :--- | :--- |
 | `bluetooth.sh` | Spawns a custom Rofi interface to scan for, list, and seamlessly connect to available Bluetooth devices. |
 | `wifi.sh` | Opens a custom Rofi menu to display available Wi-Fi networks and manage connections without needing a heavy GUI network manager. |
+
+### Theme Management (`Hyprland-dotfiles/scripts`)
+| Script | Functionality |
+| :--- | :--- |
+| `theme.sh` | Dynamically updates the Hyprland and SDDM wallpapers based on a numerical argument, and seamlessly toggles the custom Waybar logo to match the theme while reloading the necessary services. |
 
 ---
 
