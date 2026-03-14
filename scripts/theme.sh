@@ -8,11 +8,13 @@ fi
 
 no=$1
 
-hypr="$HOME/.config/hypr/hyprpaper.conf"
+hyprppr="$HOME/.config/hypr/hyprpaper.conf"
+hyprlck="$HOME/.config/hypr/hyprlock.conf"
 wybr="$HOME/.config/waybar/config.jsonc"
 sddm="/usr/share/sddm/themes/silent/configs/default.conf"
 
-sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$hypr"
+sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$hyprppr"
+sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$hyprlck"
 sudo sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$sddm"
 
 if [ $no -eq 14 ]; then
