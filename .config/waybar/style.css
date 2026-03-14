@@ -48,12 +48,14 @@ window#waybar {
 #clock {
     color: #ffffff;
     font-weight: 800;
+    padding-top: 5px;
 }
 
 /* Window Title */
 #window {
     color: rgba(255, 255, 255, 0.8);
     font-style: normal;
+    padding-top: 4px;
 }
 
 /* Left Buttons */

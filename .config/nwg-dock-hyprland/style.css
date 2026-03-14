@@ -5,7 +5,7 @@ window {
 }
 
 #box {
-    padding: 3px 3px;
+    padding: 1px 1px;
 }
 
 #active {
@@ -31,7 +31,7 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 5px; /* Slight growth */
     margin-bottom: 5px; /* Move up slightly */
-    border-radius: 7px;
+    border-radius: 5px;
 } 
 
 button:focus {
