@@ -133,7 +133,7 @@ This configuration uses the **`SUPER`** (Windows/Meta) key as the main modifier 
 | `SUPER` + `O` | Toggle window opacity |
 | `SUPER` + `M` | Minimize window |
 | `SUPER` + `ALT` + `M` | Recover minimized window (works as stack) |
-| `CTRL` + `H/J/K/L` | Move focus (Left / Down / Up / Right) |
+| `ALT` + `H/J/K/L` | Move focus (Left / Down / Up / Right) |
 | `SUPER` + `Left Click` | Move window (drag) |
 | `SUPER` + `Right Click` | Resize window (drag) |
 
