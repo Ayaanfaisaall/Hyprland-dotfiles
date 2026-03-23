@@ -66,6 +66,8 @@ Hyprland-dotfiles/
 │   │   ├── wallpapers.conf
 │   │   ├── window.conf
 │   │   └── winrulev2.conf
+│   ├── keyd/
+│   │   └── default.conf
 │   ├── nwg-dock-hyprland/
 │   │   └── style.css
 │   ├── plymouth/
@@ -121,6 +123,7 @@ This configuration uses the **`SUPER`** (Windows/Meta) key as the main modifier 
 | `SUPER` + `ALT` + `P` | Poweroff (with confirmation) |
 | `SUPER` + `ALT` + `R` | Reboot (with confirmation) |
 | `SUPER` + `ALT` + `L` | Lock (with confirmation) |
+| `SUPER` + `ALT` + `S` | Suspend (with confirmation) |
 
 ### Window Management
 | Shortcut | Action |

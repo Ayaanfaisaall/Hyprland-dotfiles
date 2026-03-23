@@ -15,6 +15,9 @@ elif [ "$action" == "reboot" ]; then
 elif [ "$action" == "hyprlock" ]; then
     prompt="Lock Session?"
     command="hyprlock"
+elif [ "$action" == "suspend" ]; then
+    prompt="Suspend Session?"
+    command="systemctl suspend && hyprlock"
 else
     echo "Invalid action"
     exit 1
