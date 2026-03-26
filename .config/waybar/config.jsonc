@@ -29,6 +29,7 @@
 ],
 
 "modules-right": [
+    "custom/sysinfo",
     "network",
     "bluetooth",
     "pulseaudio",
@@ -88,6 +89,13 @@
 
 
 // --- Modules Right ---
+"custom/sysinfo": {
+    "exec": "/home/ayaan/.config/waybar/scripts/sysinfo.sh",
+    "interval": 2,
+    "format": "{}",
+    "on-click": "hyprctl dispatch exec gnome-system-monitor"
+},
+
 "network": {
     "format-wifi": " ",
     "format-disconnected": "",

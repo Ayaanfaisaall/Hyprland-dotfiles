@@ -79,6 +79,10 @@ window#waybar {
 }
 
 /* --- SVG Based Modules --- */
+#custom-sysinfo {
+    padding-top: 5px;
+    padding-right: 10px;
+}
 
 #network {
     background-image: url("/home/ayaan/.config/waybar/icons/wifi.svg");
