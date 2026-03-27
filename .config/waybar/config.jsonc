@@ -135,9 +135,8 @@
         "bat-90": 90,
         "bat-100": 100
     },
+    "interval": 2,
     "format": " ",
-    "format-charging": " ",
-    "format-plugged": " ",
     "tooltip-format": "{capacity}%",
     "on-click": "eww open --toggle control_center"
 }
