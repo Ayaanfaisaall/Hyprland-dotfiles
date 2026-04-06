@@ -52,6 +52,7 @@ Hyprland-dotfiles/
 │   │   └── eww.yuck
 │   ├── hypr/
 │   │   ├── scripts/
+│   │   ├── wallpapers/
 │   │   ├── autostart.conf
 │   │   ├── bindings.conf
 │   │   ├── env.conf
@@ -63,7 +64,6 @@ Hyprland-dotfiles/
 │   │   ├── monitor.conf
 │   │   ├── permissions.conf
 │   │   ├── programs.conf
-│   │   ├── wallpapers.conf
 │   │   ├── window.conf
 │   │   └── winrulev2.conf
 │   ├── keyd/
