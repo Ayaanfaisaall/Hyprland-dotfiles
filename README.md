@@ -43,8 +43,13 @@ Finding a balance between a feature-rich desktop and a visually calm workspace c
 Hyprland-dotfiles/
 │
 ├── .config/
+│   ├── alacritty/
+│   │   └── alacritty.toml
 │   ├── dunst/
 │   │   └── dunstrc
+│   ├── fastfetch/
+│   │   ├── logo/
+│   │   └── config.jsonc
 │   ├── eww/
 │   │   ├── assets/
 │   │   ├── scripts/
