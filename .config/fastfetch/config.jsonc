@@ -4,7 +4,8 @@
     "source": "/home/ayaan/dotfiles/.config/fastfetch/logo/Zaail.txt", 
     "type": "file",
     "padding": {
-	    "left":6
+	    "left":5,
+	    "right":3
     }
   },
   "modules": [
