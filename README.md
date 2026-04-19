@@ -89,6 +89,7 @@ Hyprland-dotfiles/
 │       ├── config.jsonc
 │       └── style.css
 │
+├── .rc/
 ├── screenshots/
 ├── scripts/
 │   └── theme.sh
