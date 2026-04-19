@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ -z "$1" ]; then
-        echo "Parameter not entered!"
+if [[ -z "$1" ]] || [[ ! "$1" =~ ^[0-9]+$ ]]; then
+        echo "Parameter(integer) not entered!"
         echo "Use like: ./theme.sh <parameter>"
         exit 1
 fi
@@ -15,14 +15,14 @@ sddm="/usr/share/sddm/themes/silent/configs/default.conf"
 
 sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$hyprppr"
 sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$hyprlck"
-sudo sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$sddm"
+sed -i "s/[0-9]\+\.jpg/$no.jpg/g" "$sddm"
 
 if [ $no -eq 14 ]; then
         sed -i "s/zaailW.svg/zaail.svg/g" "$wybr"
-        pkill waybar; waybar &> /dev/null &
 else
         sed -i "s/zaail.svg/zaailW.svg/g" "$wybr" &> /dev/null
-        pkill waybar; waybar &> /dev/null &
 fi
 
+
+pkill waybar; waybar &> /dev/null &
 pkill hyprpaper; hyprpaper &> /dev/null &
