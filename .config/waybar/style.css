@@ -2,9 +2,8 @@
 
 /* --- Global Style --- */
 * {
-    /* JetBrains Mono Nerd Font ka istemal */
-    font-family: "JetBrainsMono Nerd Font", "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 14px;
+    font-family: "Comic Mono";
+    font-size: 13px;
     font-weight: bold;
     border: none;
     border-radius: 15px;
@@ -43,12 +42,11 @@ window#waybar {
     border-radius: 8px;
     background: transparent;
 }
-
 /* --- Workspaces (Slider Effect) --- */
 #workspaces {
     background: transparent;
-    padding: 2px 4px; 
-    margin: 4px 2px;
+    padding: 0px 4px; 
+    margin: 2px 1px;
     border: 0.4px solid rgba(255, 255, 255, 0.3); 
     border-radius: 15px; 
 }
@@ -57,11 +55,11 @@ window#waybar {
 #workspaces button {
     padding: 0 2px; 
     padding-top: 4px;
-    margin: 0px 1px; 
+    margin: 0px 0px; 
     color: rgba(255, 255, 255, 0.5); 
     background: transparent;
     border-radius: 15px; 
-    min-width: 25px;
+    min-width: 20px;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.68);
 }
 
@@ -76,10 +74,11 @@ window#waybar {
 #workspaces button.active {
     background: rgba(255, 255, 255, 0.15); 
     color: #ffffff; 
-    min-width: 50px; 
+    min-width: 40px; 
     border-radius: 15px;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.68);
 }
+
 
 /* --- Specific Enhancements --- */
 
@@ -131,7 +130,6 @@ window#waybar {
     padding-right: 9px;
 }
 
-/* Base class SVGs ko sahi se hide/structure karne ke liye zaroori hai */
 #bluetooth {
     background-image: none;
     padding: 0;
@@ -167,7 +165,6 @@ window#waybar {
     min-width: 0;
 }
 
-/* Battery Base - SVG icons ki sizing ke liye zaroori hai */
 #battery {
     background-size: 28px;
     background-repeat: no-repeat;

@@ -13,13 +13,13 @@
       "bottom": 3    
     }
   },
-  "display": {
+  "display":{
     "color": {
-      "keys": "38;2;60;110;180",
-      "title": "38;2;60;110;180"
+      "keys": "38;2;50;130;224",
+      "title": "38;2;50;130;224"
     }
   },
-  "modules": [
+   "modules": [
     "break",
     "title",
     "separator",
