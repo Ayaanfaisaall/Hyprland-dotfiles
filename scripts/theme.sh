@@ -1,8 +1,14 @@
 #!/bin/bash
 
+if [[ "$1" == "-ls" ]]; then
+        timg --grid=7 --title="%b" "$HOME/dotfiles/.config/hypr/wallpapers/"* 2> /dev/null
+	echo " "
+        exit 0
+fi
+
 if [[ -z "$1" ]] || [[ ! "$1" =~ ^[0-9]+$ ]]; then
-        echo "Parameter(integer) not entered!"
-        echo "Use like: ./theme.sh <parameter>"
+        echo "Use like: ./theme.sh <parameter(int)>"
+        echo "OR: ./theme.sh -ls (to view)"
         exit 1
 fi
 
