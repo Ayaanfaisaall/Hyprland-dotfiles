@@ -1,7 +1,7 @@
 configuration {
     modi: "drun,run";
     show-icons: true;
-    font: "Poppins 11";
+    font: "Comic Mono 11";
     display-drun: "";
     drun-display-format: "{name}";
 }
@@ -40,7 +40,7 @@ inputbar {
 
 prompt {
     text-color: @fg;
-    font: "Poppins 12";
+    font: "Comic Mono 12";
 }
 
 entry {
@@ -60,12 +60,12 @@ element {
     padding: 10px 15px;
     border-radius: 10px;
     spacing: 10px;
-    text-color: @fg; /* Yahan color force kiya */
+    text-color: @fg;
 }
 
 element normal.normal, element alternate.normal {
     background-color: transparent;
-    text-color: @fg; /* Inactive text ko white kiya */
+    text-color: @fg;
 }
 
 element selected.normal {
