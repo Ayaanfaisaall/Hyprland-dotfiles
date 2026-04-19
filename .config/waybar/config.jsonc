@@ -68,6 +68,7 @@
     "rewrite": {
         "": "Desktop",
         "alacritty": "Terminal",
+        "kitty": "Terminal",
         "brave-.*": "Web App",
         "google-chrome": "Google Chrome"
     }
