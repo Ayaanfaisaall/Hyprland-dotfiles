@@ -14,8 +14,6 @@ This repository contains the configuration files required to replicate a clean, 
 ![4](screenshots/4.png)
 ![5](screenshots/5.png)
 ![6](screenshots/6.png)
-![7](screenshots/7.png)
-![8](screenshots/7.png)
 
 ---
 
