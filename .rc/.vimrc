@@ -25,7 +25,7 @@ vnoremap cp "+y
 nnoremap cpa gg"+yG
 
 nnoremap cmt I#<Esc>
-nnoremap rcmt :s/^\(\s*\)#/\1/e<CR>
+nnoremap cmr :s/^\(\s*\)#/\1/e<CR>
 
 vnoremap cmt :s/^/#/<CR>
-vnoremap rcmt :s/^#//<CR>
+vnoremap cmr :s/^#//<CR>
