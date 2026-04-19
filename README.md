@@ -55,6 +55,8 @@ Hyprland-dotfiles/
 │   │   ├── scripts/
 │   │   ├── eww.scss
 │   │   └── eww.yuck
+│   ├── foot/
+│   │   └── foot.ini
 │   ├── hypr/
 │   │   ├── scripts/
 │   │   ├── wallpapers/
@@ -73,6 +75,8 @@ Hyprland-dotfiles/
 │   │   └── winrulev2.conf
 │   ├── keyd/
 │   │   └── default.conf
+│   ├── kitty/
+│   │   └── kitty.conf
 │   ├── nwg-dock-hyprland/
 │   │   └── style.css
 │   ├── plymouth/
