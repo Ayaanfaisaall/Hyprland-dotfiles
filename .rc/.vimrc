@@ -8,15 +8,15 @@ syntax on
 nnoremap fs gg
 nnoremap fe G
 nnoremap end $
-nnoremap srt 0
-nnoremap srtw ^
+nnoremap dne 0
+nnoremap dnw ^
 
 " Operator-pending mappings 
 onoremap fs gg
 onoremap fe G
 onoremap end $
-onoremap srt 0
-onoremap srtw ^
+onoremap dne 0
+onoremap dnw ^
 
 " System clipboard copy
 nnoremap cp "+y
@@ -25,7 +25,7 @@ vnoremap cp "+y
 nnoremap cpa gg"+yG
 
 nnoremap cmt I#<Esc>
-nnoremap cmr :s/^\(\s*\)#/\1/e<CR>
+nnoremap cmr ^x
 
 vnoremap cmt :s/^/#/<CR>
-vnoremap cmr :s/^#//<CR>
+vnoremap cmr ^x 
